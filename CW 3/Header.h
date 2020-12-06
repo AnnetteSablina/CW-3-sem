@@ -29,32 +29,33 @@ class Human_actions;
 
 
  
-int menu_1(int);//меню первого уровня
-string pass(string );//пароль звездочками
+ 
+int menu_1(int);//РјРµРЅСЋ РїРµСЂРІРѕРіРѕ СѓСЂРѕРІРЅСЏ
+string pass(string );//РїР°СЂРѕР»СЊ Р·РІРµР·РґРѕС‡РєР°РјРё
 string yes_no(string);
-void draw(string);//функция для покраски текста
-//string getString(string);//вывод строки
-string client_code(string);//проверка на ввод номера паспорта
-string ccsns(string);//проверка на ввод страны,города, имени , фамилии и тд
-string hfst(string,int);//проверка на ввод номера дома и квартиры
-string contract_name(string );//название договора
-string service_code(string);//код услуги
+void draw(string);//С„СѓРЅРєС†РёСЏ РґР»СЏ РїРѕРєСЂР°СЃРєРё С‚РµРєСЃС‚Р°
+//string getString(string);//РІС‹РІРѕРґ СЃС‚СЂРѕРєРё
+string client_code(string);//РїСЂРѕРІРµСЂРєР° РЅР° РІРІРѕРґ РЅРѕРјРµСЂР° РїР°СЃРїРѕСЂС‚Р°
+string ccsns(string);//РїСЂРѕРІРµСЂРєР° РЅР° РІРІРѕРґ СЃС‚СЂР°РЅС‹,РіРѕСЂРѕРґР°, РёРјРµРЅРё , С„Р°РјРёР»РёРё Рё С‚Рґ
+string hfst(string,int);//РїСЂРѕРІРµСЂРєР° РЅР° РІРІРѕРґ РЅРѕРјРµСЂР° РґРѕРјР° Рё РєРІР°СЂС‚РёСЂС‹
+string contract_name(string );//РЅР°Р·РІР°РЅРёРµ РґРѕРіРѕРІРѕСЂР°
+string service_code(string);//РєРѕРґ СѓСЃР»СѓРіРё
 
 int get_int(string);//
-int year(string);//проверка на ввод года
-int month(string);//проверк на воод месяца
-int day(string , bool , int&);//провека на ввод дня
-bool current_time(int &, int &, int &, bool );//сравние времени с настоящим
-string to_string_date(int& , int& , int& );// преобразование даты в строку
+int year(string);//РїСЂРѕРІРµСЂРєР° РЅР° РІРІРѕРґ РіРѕРґР°
+int month(string);//РїСЂРѕРІРµСЂРє РЅР° РІРѕРѕРґ РјРµСЃСЏС†Р°
+int day(string , bool , int&);//РїСЂРѕРІРµРєР° РЅР° РІРІРѕРґ РґРЅСЏ
+bool current_time(int &, int &, int &, bool );//СЃСЂР°РІРЅРёРµ РІСЂРµРјРµРЅРё СЃ РЅР°СЃС‚РѕСЏС‰РёРј
+string to_string_date(int& , int& , int& );// РїСЂРµРѕР±СЂР°Р·РѕРІР°РЅРёРµ РґР°С‚С‹ РІ СЃС‚СЂРѕРєСѓ
 
 
 namespace BOO {
-	string login(int, bool&);//ввод логина
-	string password(int,bool&);//ввод пароля
-	void menu(int);//меню
-	string client_code(string);//проверка на номер паспорта
-	string contract_code(int, bool&);//проверка на номер договора
-	void choice(int);//выбор в каком меню остаться
+	string login(int, bool&);//РІРІРѕРґ Р»РѕРіРёРЅР°
+	string password(int,bool&);//РІРІРѕРґ РїР°СЂРѕР»СЏ
+	void menu(int);//РјРµРЅСЋ
+	string client_code(string);//РїСЂРѕРІРµСЂРєР° РЅР° РЅРѕРјРµСЂ РїР°СЃРїРѕСЂС‚Р°
+	string contract_code(int, bool&);//РїСЂРѕРІРµСЂРєР° РЅР° РЅРѕРјРµСЂ РґРѕРіРѕРІРѕСЂР°
+	void choice(int);//РІС‹Р±РѕСЂ РІ РєР°РєРѕРј РјРµРЅСЋ РѕСЃС‚Р°С‚СЊСЃСЏ
 }
 
 
@@ -65,16 +66,16 @@ namespace BOO {
 
  class Human {
 protected:
-	string login; //логин
-	string password; //пароль
+	string login; //Р»РѕРіРёРЅ
+	string password; //РїР°СЂРѕР»СЊ
 public:
 	Human(string, string);
 	Human() {};
 	bool operator==(Human human);
-	friend void data_user_file(vector<Human>&);// заполение вектора логинами и паролями пользователей
-	friend void data_admin_file(vector<Human>&);// заполение вектора логинами и паролями администратора
+	friend void data_user_file(vector<Human>&);// Р·Р°РїРѕР»РµРЅРёРµ РІРµРєС‚РѕСЂР° Р»РѕРіРёРЅР°РјРё Рё РїР°СЂРѕР»СЏРјРё РїРѕР»СЊР·РѕРІР°С‚РµР»РµР№
+	friend void data_admin_file(vector<Human>&);// Р·Р°РїРѕР»РµРЅРёРµ РІРµРєС‚РѕСЂР° Р»РѕРіРёРЅР°РјРё Рё РїР°СЂРѕР»СЏРјРё Р°РґРјРёРЅРёСЃС‚СЂР°С‚РѕСЂР°
 	static void rewrite_user_file(vector<Human>& );
-    bool check_login_once();//проверить наличие логина на единство
+    bool check_login_once();//РїСЂРѕРІРµСЂРёС‚СЊ РЅР°Р»РёС‡РёРµ Р»РѕРіРёРЅР° РЅР° РµРґРёРЅСЃС‚РІРѕ
 	~Human() {};
 	friend class Client;
 	friend class Admin;
@@ -83,91 +84,91 @@ public:
  
  class Human_actions {
  public:
-	 virtual int menu() = 0;//меню
-	 virtual void enterAccount(vector<Human>&) = 0;//вход в аккаунт
+	 virtual int menu() = 0;//РјРµРЅСЋ
+	 virtual void enterAccount(vector<Human>&) = 0;//РІС…РѕРґ РІ Р°РєРєР°СѓРЅС‚
  };
 
  class Client :public Human, virtual public Human_actions {
 protected:
-	string client_code;// код клиента/номер паспорта
-	string name;//Имя
-	string surname;//Фамилия
-	string telephone_number;//Номер телефона
-	string country;//Страна
-    string city;//Город
-	string street;//Улица
-	string housenumber;//Номер дома
-	string flatnumber;//Номер квартиры
-	string quantity;//количество заключенных договоров
+	string client_code;// РєРѕРґ РєР»РёРµРЅС‚Р°/РЅРѕРјРµСЂ РїР°СЃРїРѕСЂС‚Р°
+	string name;//РРјСЏ
+	string surname;//Р¤Р°РјРёР»РёСЏ
+	string telephone_number;//РќРѕРјРµСЂ С‚РµР»РµС„РѕРЅР°
+	string country;//РЎС‚СЂР°РЅР°
+    string city;//Р“РѕСЂРѕРґ
+	string street;//РЈР»РёС†Р°
+	string housenumber;//РќРѕРјРµСЂ РґРѕРјР°
+	string flatnumber;//РќРѕРјРµСЂ РєРІР°СЂС‚РёСЂС‹
+	string quantity;//РєРѕР»РёС‡РµСЃС‚РІРѕ Р·Р°РєР»СЋС‡РµРЅРЅС‹С… РґРѕРіРѕРІРѕСЂРѕРІ
  public:
 	Client() {};
 	~Client() {};
 	friend class Admin;
-	int menu() override; //меню пользователя
-	void enterAccount(vector<Human>&) override;// вход в аккаунт пользователя
-	friend void data_passport_file(vector<Client>&);//заполнения вектора с номерами паспортов пользователей
-	friend void data_client_file(vector<Client>&);//заполнение вектора инфы с инфой пользователей
-	friend void rewrite_information_file(vector <Client>&);//перезапись файла с инфой о пользователе
-	friend void rewrite_passport_file(vector <Client>&);//перезапись файла с паспортными данными
-	friend void rewrite_contract_file(vector <Client>&);// перезапись файла с заключенными договорами(номер + имя и фамилия)
-	friend void data_contract_file(vector<Client>& );//заполнение вектора с заключенными договорами(номер + имя и фамилия)
-	void changelogpass(int);//сменить логин/пароль
-	void changeinfo(int);//смена информации о пользователе
-	void find_contract_number(int);//поиск договор по его номеру
-	void find_passport(int);//поиск договора по номеру паспорта
-	void find_date(int);//поиск договоров по дате заключения
-	void find_user(int);//поиск информации о пользователе
+	int menu() override; //РјРµРЅСЋ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ
+	void enterAccount(vector<Human>&) override;// РІС…РѕРґ РІ Р°РєРєР°СѓРЅС‚ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ
+	friend void data_passport_file(vector<Client>&);//Р·Р°РїРѕР»РЅРµРЅРёСЏ РІРµРєС‚РѕСЂР° СЃ РЅРѕРјРµСЂР°РјРё РїР°СЃРїРѕСЂС‚РѕРІ РїРѕР»СЊР·РѕРІР°С‚РµР»РµР№
+	friend void data_client_file(vector<Client>&);//Р·Р°РїРѕР»РЅРµРЅРёРµ РІРµРєС‚РѕСЂР° РёРЅС„С‹ СЃ РёРЅС„РѕР№ РїРѕР»СЊР·РѕРІР°С‚РµР»РµР№
+	friend void rewrite_information_file(vector <Client>&);//РїРµСЂРµР·Р°РїРёСЃСЊ С„Р°Р№Р»Р° СЃ РёРЅС„РѕР№ Рѕ РїРѕР»СЊР·РѕРІР°С‚РµР»Рµ
+	friend void rewrite_passport_file(vector <Client>&);//РїРµСЂРµР·Р°РїРёСЃСЊ С„Р°Р№Р»Р° СЃ РїР°СЃРїРѕСЂС‚РЅС‹РјРё РґР°РЅРЅС‹РјРё
+	friend void rewrite_contract_file(vector <Client>&);// РїРµСЂРµР·Р°РїРёСЃСЊ С„Р°Р№Р»Р° СЃ Р·Р°РєР»СЋС‡РµРЅРЅС‹РјРё РґРѕРіРѕРІРѕСЂР°РјРё(РЅРѕРјРµСЂ + РёРјСЏ Рё С„Р°РјРёР»РёСЏ)
+	friend void data_contract_file(vector<Client>& );//Р·Р°РїРѕР»РЅРµРЅРёРµ РІРµРєС‚РѕСЂР° СЃ Р·Р°РєР»СЋС‡РµРЅРЅС‹РјРё РґРѕРіРѕРІРѕСЂР°РјРё(РЅРѕРјРµСЂ + РёРјСЏ Рё С„Р°РјРёР»РёСЏ)
+	void changelogpass(int);//СЃРјРµРЅРёС‚СЊ Р»РѕРіРёРЅ/РїР°СЂРѕР»СЊ
+	void changeinfo(int);//СЃРјРµРЅР° РёРЅС„РѕСЂРјР°С†РёРё Рѕ РїРѕР»СЊР·РѕРІР°С‚РµР»Рµ
+	void find_contract_number(int);//РїРѕРёСЃРє РґРѕРіРѕРІРѕСЂ РїРѕ РµРіРѕ РЅРѕРјРµСЂСѓ
+	void find_passport(int);//РїРѕРёСЃРє РґРѕРіРѕРІРѕСЂР° РїРѕ РЅРѕРјРµСЂСѓ РїР°СЃРїРѕСЂС‚Р°
+	void find_date(int);//РїРѕРёСЃРє РґРѕРіРѕРІРѕСЂРѕРІ РїРѕ РґР°С‚Рµ Р·Р°РєР»СЋС‡РµРЅРёСЏ
+	void find_user(int);//РїРѕРёСЃРє РёРЅС„РѕСЂРјР°С†РёРё Рѕ РїРѕР»СЊР·РѕРІР°С‚РµР»Рµ
 };
 
  class Admin :public Client {
 public:
-	void enterAccount(vector<Human>&) override;//вход в аккаунт администратора
-	int menu() override; //меню администратора
-	void conclusion_contract();// заключение договора
-	bool add_logpass(); // добавить логин и пароль пользователя
-	void add_user_information_contract();//добавление инфы о юзере при заключении договра
-	bool add_client_code_into_contract();// добавления номера паспорта при заключении договора
-	void add_dogovor();//добавление данных договора
-	void output(int);// вывод данных в табличной форме
-	int find_sort_menu();//меню сортировки и поиска
-	void find_service(int);//поиск договоров по коду услуг
-	void sort(int);//сортировка документов по коду услуг
-	void top_10(int);//топ 10 клиентов
-	void add_information(int);//добавление информации о пользователе
-	void delete_user(int);// удаление пользователя
+	void enterAccount(vector<Human>&) override;//РІС…РѕРґ РІ Р°РєРєР°СѓРЅС‚ Р°РґРјРёРЅРёСЃС‚СЂР°С‚РѕСЂР°
+	int menu() override; //РјРµРЅСЋ Р°РґРјРёРЅРёСЃС‚СЂР°С‚РѕСЂР°
+	void conclusion_contract();// Р·Р°РєР»СЋС‡РµРЅРёРµ РґРѕРіРѕРІРѕСЂР°
+	bool add_logpass(); // РґРѕР±Р°РІРёС‚СЊ Р»РѕРіРёРЅ Рё РїР°СЂРѕР»СЊ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ
+	void add_user_information_contract();//РґРѕР±Р°РІР»РµРЅРёРµ РёРЅС„С‹ Рѕ СЋР·РµСЂРµ РїСЂРё Р·Р°РєР»СЋС‡РµРЅРёРё РґРѕРіРѕРІСЂР°
+	bool add_client_code_into_contract();// РґРѕР±Р°РІР»РµРЅРёСЏ РЅРѕРјРµСЂР° РїР°СЃРїРѕСЂС‚Р° РїСЂРё Р·Р°РєР»СЋС‡РµРЅРёРё РґРѕРіРѕРІРѕСЂР°
+	void add_dogovor();//РґРѕР±Р°РІР»РµРЅРёРµ РґР°РЅРЅС‹С… РґРѕРіРѕРІРѕСЂР°
+	void output(int);// РІС‹РІРѕРґ РґР°РЅРЅС‹С… РІ С‚Р°Р±Р»РёС‡РЅРѕР№ С„РѕСЂРјРµ
+	int find_sort_menu();//РјРµРЅСЋ СЃРѕСЂС‚РёСЂРѕРІРєРё Рё РїРѕРёСЃРєР°
+	void find_service(int);//РїРѕРёСЃРє РґРѕРіРѕРІРѕСЂРѕРІ РїРѕ РєРѕРґСѓ СѓСЃР»СѓРі
+	void sort(int);//СЃРѕСЂС‚РёСЂРѕРІРєР° РґРѕРєСѓРјРµРЅС‚РѕРІ РїРѕ РєРѕРґСѓ СѓСЃР»СѓРі
+	void top_10(int);//С‚РѕРї 10 РєР»РёРµРЅС‚РѕРІ
+	void add_information(int);//РґРѕР±Р°РІР»РµРЅРёРµ РёРЅС„РѕСЂРјР°С†РёРё Рѕ РїРѕР»СЊР·РѕРІР°С‚РµР»Рµ
+	void delete_user(int);// СѓРґР°Р»РµРЅРёРµ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ
 };
 
 
  class Contract {
  protected:
-	 string contract_code;//Код договора
+	 string contract_code;//РљРѕРґ РґРѕРіРѕРІРѕСЂР°
  public:
 	 Contract() {};
 	 ~Contract() {};
-	 string name;//Название договора
-	 string service_code;// Код услуги
-	 string summ;//Сумма
-	 string commition;//Комисcионные
-	 friend void contract_code(vector<Contract>&);//заполнение вектора с номерами договоров
+	 string name;//РќР°Р·РІР°РЅРёРµ РґРѕРіРѕРІРѕСЂР°
+	 string service_code;// РљРѕРґ СѓСЃР»СѓРіРё
+	 string summ;//РЎСѓРјРјР°
+	 string commition;//РљРѕРјРёСЃcРёРѕРЅРЅС‹Рµ
+	 friend void contract_code(vector<Contract>&);//Р·Р°РїРѕР»РЅРµРЅРёРµ РІРµРєС‚РѕСЂР° СЃ РЅРѕРјРµСЂР°РјРё РґРѕРіРѕРІРѕСЂРѕРІ
 	 friend class Admin;
 	 friend class Client;
-	 void add_document_code();//добавить код договора
+	 void add_document_code();//РґРѕР±Р°РІРёС‚СЊ РєРѕРґ РґРѕРіРѕРІРѕСЂР°
 };
 
  template <class T>
  class Outputs {
  protected:
-	 string client_code;//номер паспорта
-	 string service_code;//код услуги
-	 string name;//название договора
-	 string summ;//сумма
-	 string comission;//комиссионные
-	 string document_code;//номер договора
-	 string date;//дата подписания
+	 string client_code;//РЅРѕРјРµСЂ РїР°СЃРїРѕСЂС‚Р°
+	 string service_code;//РєРѕРґ СѓСЃР»СѓРіРё
+	 string name;//РЅР°Р·РІР°РЅРёРµ РґРѕРіРѕРІРѕСЂР°
+	 string summ;//СЃСѓРјРјР°
+	 string comission;//РєРѕРјРёСЃСЃРёРѕРЅРЅС‹Рµ
+	 string document_code;//РЅРѕРјРµСЂ РґРѕРіРѕРІРѕСЂР°
+	 string date;//РґР°С‚Р° РїРѕРґРїРёСЃР°РЅРёСЏ
  public:
 	 Outputs() {};
 	 ~Outputs() {};
-	 friend void data_dogovor_file(vector<Outputs>&);//заполнение вектора с заключенными договорами
+	 friend void data_dogovor_file(vector<Outputs>&);//Р·Р°РїРѕР»РЅРµРЅРёРµ РІРµРєС‚РѕСЂР° СЃ Р·Р°РєР»СЋС‡РµРЅРЅС‹РјРё РґРѕРіРѕРІРѕСЂР°РјРё
 	 friend class Admin;
 	 friend class Client;
  };
