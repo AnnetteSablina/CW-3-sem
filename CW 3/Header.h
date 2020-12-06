@@ -173,7 +173,7 @@ public:
  };
 
  template <typename T>
- string getString(T p)
+ string get_string(T p)
  {
 	 system("cls");
 	 string mystring;

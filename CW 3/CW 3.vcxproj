@@ -140,7 +140,6 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Admin.cpp" />
-    <ClCompile Include="Classes.cpp" />
     <ClCompile Include="CW 3.cpp" />
     <ClCompile Include="Files.cpp" />
     <ClCompile Include="Functionscpp.cpp" />

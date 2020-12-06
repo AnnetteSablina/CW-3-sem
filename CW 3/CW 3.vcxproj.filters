@@ -21,9 +21,6 @@
     <ClCompile Include="SHA256.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="Classes.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
     <ClCompile Include="Files.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>

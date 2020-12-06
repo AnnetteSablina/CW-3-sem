@@ -143,23 +143,23 @@ string BOO::login(int type, bool& exit) {
 	switch (type) {
 	case 1:
 		system("cls");
-		login = getString(" Введите логин.Для выхода введите menu.");
+		login = get_string(" Введите логин.Для выхода введите menu.");
 		break;
 	case 2:
 		system("cls");
-		login = getString(" Вы ввели неверные логин или пароль. Введите логин еще раз. Для выхода введите menu.");
+		login = get_string(" Вы ввели неверные логин или пароль. Введите логин еще раз. Для выхода введите menu.");
 		break;
 	case 3:
 		system("cls");
-		login = getString(" Такой логин уже существует. Введите другой логин или для выхода введите menu.");
+		login = get_string(" Такой логин уже существует. Введите другой логин или для выхода введите menu.");
 		break;
 	case 4:
 		system("cls");
-		login = getString(" Введите логин , чтобы изменить данные.");
+		login = get_string(" Введите логин , чтобы изменить данные.");
 		break;
 	case 5:
 		system("cls");
-		login = getString(" Введите логин пользователя, которого вы хотите удалить.");
+		login = get_string(" Введите логин пользователя, которого вы хотите удалить.");
 		break;
 	};
 	do
@@ -174,7 +174,7 @@ string BOO::login(int type, bool& exit) {
 		}
 		if (login.size() < 5 || login.size() > 15)
 		{
-			login = getString(" Введите логин от 5 до 15 символов.");
+			login = get_string(" Введите логин от 5 до 15 символов.");
 			continue;
 		}
 
@@ -183,7 +183,7 @@ string BOO::login(int type, bool& exit) {
 				|| (login[i] >= 'A' && login[i] <= 'Z')
 				|| (login[i] >= '0' && login[i] <= '9')))
 			{
-				login = getString(" Логин содержит недопустимые символы.");
+				login = get_string(" Логин содержит недопустимые символы.");
 				break;
 			}
 			else u++;
@@ -489,19 +489,19 @@ string BOO::contract_code(int type, bool& access) {
 	switch (type) {
 	case 1:
 		system("cls");
-		if (access) document_code = getString("Введите номер договора.");
-		else document_code = getString("Введите код документа еще раз.");
+		if (access) document_code = get_string("Введите номер договора.");
+		else document_code = get_string("Введите код документа еще раз.");
 		break;
 	case 2:
 		system("cls");
-		document_code = getString("Такой номер договора уже существует в базе. Введите номер документа еще раз.");
+		document_code = get_string("Такой номер договора уже существует в базе. Введите номер документа еще раз.");
 		break;
 	};
 	do {
 		u = 0;
 		if (document_code.size() != 10)
 		{
-			document_code = getString("Код договора должен содержать 10 символов.");
+			document_code = get_string("Код договора должен содержать 10 символов.");
 			continue;
 		}
 
@@ -510,7 +510,7 @@ string BOO::contract_code(int type, bool& access) {
 				|| (document_code[i] >= 'A' && document_code[i] <= 'Z')
 				|| (document_code[i] >= '0' && document_code[i] <= '9')))
 			{
-				document_code = getString("Код договора содержит недопустимые символы.");
+				document_code = get_string("Код договора содержит недопустимые символы.");
 				break;
 			}
 			else u++;
