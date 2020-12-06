@@ -7,39 +7,39 @@ int menu_1(int mode) {
 		system("cls");
 		key = (key + 3) % 3;
 		if (mode == 0) {
-			if (key == 0) draw(" ->   Войти от имени администратора");
-			else  cout << "   Войти от имени администратора" << endl;
+			if (key == 0) draw(" ->   Р’РѕР№С‚Рё РѕС‚ РёРјРµРЅРё Р°РґРјРёРЅРёСЃС‚СЂР°С‚РѕСЂР°");
+			else  cout << "   Р’РѕР№С‚Рё РѕС‚ РёРјРµРЅРё Р°РґРјРёРЅРёСЃС‚СЂР°С‚РѕСЂР°" << endl;
 
-			if (key == 1 ) draw(" ->   Войти от имени пользователя ");
-			else  cout << "   Войти от имени пользователя " << endl;
+			if (key == 1 ) draw(" ->   Р’РѕР№С‚Рё РѕС‚ РёРјРµРЅРё РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ ");
+			else  cout << "   Р’РѕР№С‚Рё РѕС‚ РёРјРµРЅРё РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ " << endl;
 
 
-			if (key == 2 && mode == 0)  draw(" ->   Выход из программы");
-			else  cout << "   Выход из программы" << endl;
+			if (key == 2 && mode == 0)  draw(" ->   Р’С‹С…РѕРґ РёР· РїСЂРѕРіСЂР°РјРјС‹");
+			else  cout << "   Р’С‹С…РѕРґ РёР· РїСЂРѕРіСЂР°РјРјС‹" << endl;
 		}
 		
 		if (mode == 1) {
 
-			if (key == 0) draw(" ->   Добавить логин и пароль пользователя");
-			else cout << "   Добавить логин и пароль нового пользователя " << endl;
+			if (key == 0) draw(" ->   Р”РѕР±Р°РІРёС‚СЊ Р»РѕРіРёРЅ Рё РїР°СЂРѕР»СЊ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ");
+			else cout << "   Р”РѕР±Р°РІРёС‚СЊ Р»РѕРіРёРЅ Рё РїР°СЂРѕР»СЊ РЅРѕРІРѕРіРѕ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ " << endl;
 
-			if (key == 1) draw("->   Добавить информацию о пользователе");
-			else  cout << "   Добавить информацию о пользователе " << endl;
+			if (key == 1) draw("->   Р”РѕР±Р°РІРёС‚СЊ РёРЅС„РѕСЂРјР°С†РёСЋ Рѕ РїРѕР»СЊР·РѕРІР°С‚РµР»Рµ");
+			else  cout << "   Р”РѕР±Р°РІРёС‚СЊ РёРЅС„РѕСЂРјР°С†РёСЋ Рѕ РїРѕР»СЊР·РѕРІР°С‚РµР»Рµ " << endl;
 
-			if (key == 2 )  draw(" ->   Вернуться в меню администратора");
-			else  cout << "   Вернуться в меню администратора" << endl;
+			if (key == 2 )  draw(" ->   Р’РµСЂРЅСѓС‚СЊСЃСЏ РІ РјРµРЅСЋ Р°РґРјРёРЅРёСЃС‚СЂР°С‚РѕСЂР°");
+			else  cout << "   Р’РµСЂРЅСѓС‚СЊСЃСЏ РІ РјРµРЅСЋ Р°РґРјРёРЅРёСЃС‚СЂР°С‚РѕСЂР°" << endl;
 		}
 
 		if (mode == 2) {
 
-			if (key == 0) draw(" ->   Изменить логин и пароль пользователя");
-			else cout << "   Изменить логин и пароль пользователя " << endl;
+			if (key == 0) draw(" ->   РР·РјРµРЅРёС‚СЊ Р»РѕРіРёРЅ Рё РїР°СЂРѕР»СЊ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ");
+			else cout << "   РР·РјРµРЅРёС‚СЊ Р»РѕРіРёРЅ Рё РїР°СЂРѕР»СЊ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ " << endl;
 
-			if (key == 1) draw("->   Изменить информацию о пользователе");
-			else  cout << "   Изменить информацию о пользователе " << endl;
+			if (key == 1) draw("->   РР·РјРµРЅРёС‚СЊ РёРЅС„РѕСЂРјР°С†РёСЋ Рѕ РїРѕР»СЊР·РѕРІР°С‚РµР»Рµ");
+			else  cout << "   РР·РјРµРЅРёС‚СЊ РёРЅС„РѕСЂРјР°С†РёСЋ Рѕ РїРѕР»СЊР·РѕРІР°С‚РµР»Рµ " << endl;
 
-			if (key == 2 )  draw(" ->   Вернуться в меню администратора");
-			else  cout << "   Вернуться в главное администратора" << endl;
+			if (key == 2 )  draw(" ->   Р’РµСЂРЅСѓС‚СЊСЃСЏ РІ РјРµРЅСЋ Р°РґРјРёРЅРёСЃС‚СЂР°С‚РѕСЂР°");
+			else  cout << "   Р’РµСЂРЅСѓС‚СЊСЃСЏ РІ РіР»Р°РІРЅРѕРµ Р°РґРјРёРЅРёСЃС‚СЂР°С‚РѕСЂР°" << endl;
 		}
 		
 		code = getch();
@@ -58,17 +58,17 @@ void BOO::menu(int a) {
 	Client client;
 	Admin admin;
 
-	if (a == 0) { //меню первого уровня
+	if (a == 0) { //РјРµРЅСЋ РїРµСЂРІРѕРіРѕ СѓСЂРѕРІРЅСЏ
 		int answer = menu_1(0);
 		switch (answer)
 		{
 		case 0: admin.enterAccount(admins); break;
 		case 1: client.enterAccount(users); break;
-		case 2: {cout << "\n Вы успешно вышли из программы." << endl; exit(0); } break;
+		case 2: {cout << "\n Р’С‹ СѓСЃРїРµС€РЅРѕ РІС‹С€Р»Рё РёР· РїСЂРѕРіСЂР°РјРјС‹." << endl; exit(0); } break;
 		}
 	}
 
-	if (a == 1) { // меню админа
+	if (a == 1) { // РјРµРЅСЋ Р°РґРјРёРЅР°
 		int answer = admin.menu();
 		switch (answer)
 		{
@@ -83,7 +83,7 @@ void BOO::menu(int a) {
 	    }
     }
 
-	if (a == 2) { // меню пользователя
+	if (a == 2) { // РјРµРЅСЋ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ
 		int answer = client.menu(); 
 		switch (answer)
 		{
@@ -143,23 +143,23 @@ string BOO::login(int type, bool& exit) {
 	switch (type) {
 	case 1:
 		system("cls");
-		login = get_string(" Введите логин.Для выхода введите menu.");
+		login = get_string(" Р’РІРµРґРёС‚Рµ Р»РѕРіРёРЅ.Р”Р»СЏ РІС‹С…РѕРґР° РІРІРµРґРёС‚Рµ menu.");
 		break;
 	case 2:
 		system("cls");
-		login = get_string(" Вы ввели неверные логин или пароль. Введите логин еще раз. Для выхода введите menu.");
+		login = get_string(" Р’С‹ РІРІРµР»Рё РЅРµРІРµСЂРЅС‹Рµ Р»РѕРіРёРЅ РёР»Рё РїР°СЂРѕР»СЊ. Р’РІРµРґРёС‚Рµ Р»РѕРіРёРЅ РµС‰Рµ СЂР°Р·. Р”Р»СЏ РІС‹С…РѕРґР° РІРІРµРґРёС‚Рµ menu.");
 		break;
 	case 3:
 		system("cls");
-		login = get_string(" Такой логин уже существует. Введите другой логин или для выхода введите menu.");
+		login = get_string(" РўР°РєРѕР№ Р»РѕРіРёРЅ СѓР¶Рµ СЃСѓС‰РµСЃС‚РІСѓРµС‚. Р’РІРµРґРёС‚Рµ РґСЂСѓРіРѕР№ Р»РѕРіРёРЅ РёР»Рё РґР»СЏ РІС‹С…РѕРґР° РІРІРµРґРёС‚Рµ menu.");
 		break;
 	case 4:
 		system("cls");
-		login = get_string(" Введите логин , чтобы изменить данные.");
+		login = get_string(" Р’РІРµРґРёС‚Рµ Р»РѕРіРёРЅ , С‡С‚РѕР±С‹ РёР·РјРµРЅРёС‚СЊ РґР°РЅРЅС‹Рµ.");
 		break;
 	case 5:
 		system("cls");
-		login = get_string(" Введите логин пользователя, которого вы хотите удалить.");
+		login = get_string(" Р’РІРµРґРёС‚Рµ Р»РѕРіРёРЅ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ, РєРѕС‚РѕСЂРѕРіРѕ РІС‹ С…РѕС‚РёС‚Рµ СѓРґР°Р»РёС‚СЊ.");
 		break;
 	};
 	do
@@ -174,7 +174,7 @@ string BOO::login(int type, bool& exit) {
 		}
 		if (login.size() < 5 || login.size() > 15)
 		{
-			login = get_string(" Введите логин от 5 до 15 символов.");
+			login = get_string(" Р’РІРµРґРёС‚Рµ Р»РѕРіРёРЅ РѕС‚ 5 РґРѕ 15 СЃРёРјРІРѕР»РѕРІ.");
 			continue;
 		}
 
@@ -183,7 +183,7 @@ string BOO::login(int type, bool& exit) {
 				|| (login[i] >= 'A' && login[i] <= 'Z')
 				|| (login[i] >= '0' && login[i] <= '9')))
 			{
-				login = get_string(" Логин содержит недопустимые символы.");
+				login = get_string(" Р›РѕРіРёРЅ СЃРѕРґРµСЂР¶РёС‚ РЅРµРґРѕРїСѓСЃС‚РёРјС‹Рµ СЃРёРјРІРѕР»С‹.");
 				break;
 			}
 			else u++;
@@ -197,11 +197,11 @@ string BOO::password(int type,bool& exit) {
 	switch (type) {
 	case 1:
 		system("cls");
-		password = pass(" Введите пароль. Для выхода введите menu.");
+		password = pass(" Р’РІРµРґРёС‚Рµ РїР°СЂРѕР»СЊ. Р”Р»СЏ РІС‹С…РѕРґР° РІРІРµРґРёС‚Рµ menu.");
 		break;
 	case 2:
 		system("cls");
-		password = pass(" Введите новый пароль.");
+		password = pass(" Р’РІРµРґРёС‚Рµ РЅРѕРІС‹Р№ РїР°СЂРѕР»СЊ.");
 		break;
 	}
 	do {
@@ -215,14 +215,14 @@ string BOO::password(int type,bool& exit) {
 		}
 		if (password.size() < 8 || password.size() > 12)
 		{
-			password = pass(" Пароль должен содержать  от 8 до 12 символов");
+			password = pass(" РџР°СЂРѕР»СЊ РґРѕР»Р¶РµРЅ СЃРѕРґРµСЂР¶Р°С‚СЊ  РѕС‚ 8 РґРѕ 12 СЃРёРјРІРѕР»РѕРІ");
 			continue;
 		}
 
 		for (auto a : password) {
 			if (!((a >= 'a' && a <= 'z') || (a >= 'A' && a <= 'Z') || (a >= '0' && a <= '9')))
 			{
-				password = pass(" Пароль содержит недопустимые символы.");
+				password = pass(" РџР°СЂРѕР»СЊ СЃРѕРґРµСЂР¶РёС‚ РЅРµРґРѕРїСѓСЃС‚РёРјС‹Рµ СЃРёРјРІРѕР»С‹.");
 				break;
 			}
 			else {
@@ -254,9 +254,9 @@ string pass(string string) {
 		}
 		else {
 			system("cls");
-			cout << " Не используйте пробел" << endl;
+			cout << " РќРµ РёСЃРїРѕР»СЊР·СѓР№С‚Рµ РїСЂРѕР±РµР»" << endl;
 			pass.erase();
-			cout << " Введите пароль. Для выхода введите menu." << endl;
+			cout << " Р’РІРµРґРёС‚Рµ РїР°СЂРѕР»СЊ. Р”Р»СЏ РІС‹С…РѕРґР° РІРІРµРґРёС‚Рµ menu." << endl;
 		}
 	}
 	return pass;
@@ -266,9 +266,9 @@ string yes_no(string message) {
 	while (true) {
 		cout << message << endl;
 		getline(cin, choice);
-		if (choice != "да" && choice != "нет") { 
+		if (choice != "РґР°" && choice != "РЅРµС‚") { 
 			system("cls");
-			cout << "Введите только да или нет" << "\n";
+			cout << "Р’РІРµРґРёС‚Рµ С‚РѕР»СЊРєРѕ РґР° РёР»Рё РЅРµС‚" << "\n";
 			continue; }
 		else break;
 	}
@@ -283,11 +283,11 @@ string BOO::client_code(string message) {
 		getline(cin, client_code);
 		system("cls");
 		if (client_code.empty())continue;
-		if (client_code.size() != 8) { cout << "Номер паспорта должен содержать 8 символов." << endl; continue; }
+		if (client_code.size() != 8) { cout << "РќРѕРјРµСЂ РїР°СЃРїРѕСЂС‚Р° РґРѕР»Р¶РµРЅ СЃРѕРґРµСЂР¶Р°С‚СЊ 8 СЃРёРјРІРѕР»РѕРІ." << endl; continue; }
 		for (unsigned int i = 0; i < client_code.size(); i++) {
 			if (client_code[i] == ' ') {
 				s++;
-				cout << " Введите номер паспорта без пробелов" << endl;
+				cout << " Р’РІРµРґРёС‚Рµ РЅРѕРјРµСЂ РїР°СЃРїРѕСЂС‚Р° Р±РµР· РїСЂРѕР±РµР»РѕРІ" << endl;
 				break;
 			}
 		}
@@ -297,7 +297,7 @@ string BOO::client_code(string message) {
 				if (client_code[i] >= 'a' && client_code[i] <= 'z' || client_code[i] >= '0' && client_code[i] <= '9' || client_code[i] >= 'A' && client_code[i] <= 'Z')
 					u++;
 				else {
-					cout << "Используйте буквы латинского алфавита и цифры для ввода" << endl;
+					cout << "РСЃРїРѕР»СЊР·СѓР№С‚Рµ Р±СѓРєРІС‹ Р»Р°С‚РёРЅСЃРєРѕРіРѕ Р°Р»С„Р°РІРёС‚Р° Рё С†РёС„СЂС‹ РґР»СЏ РІРІРѕРґР°" << endl;
 					break;
 				}
 				if (u == client_code.size()) {
@@ -323,13 +323,13 @@ string ccsns(string message) {
 		system("cls");
 		for (unsigned int i = 0; i < ccs.size(); i++) {
 			if (ccs.size() < 2 || ccs.size() >= 20) {
-				cout << "Минимум 2 символа. Максимум 20." << endl;
+				cout << "РњРёРЅРёРјСѓРј 2 СЃРёРјРІРѕР»Р°. РњР°РєСЃРёРјСѓРј 20." << endl;
 				break;
 			}
 			if (ccs[0] >= (-64) && ccs[0] <= (-33) || ccs[0] == (-88)) i = 1;
 			else
 			{
-				cout << "Первая буква должна быть заглавной. Используйте для ввода буквы славянского алфавита.\n" << endl;
+				cout << "РџРµСЂРІР°СЏ Р±СѓРєРІР° РґРѕР»Р¶РЅР° Р±С‹С‚СЊ Р·Р°РіР»Р°РІРЅРѕР№. РСЃРїРѕР»СЊР·СѓР№С‚Рµ РґР»СЏ РІРІРѕРґР° Р±СѓРєРІС‹ СЃР»Р°РІСЏРЅСЃРєРѕРіРѕ Р°Р»С„Р°РІРёС‚Р°.\n" << endl;
 				break;
 			}
 
@@ -338,7 +338,7 @@ string ccsns(string message) {
 				if ((ccs[i] >= (-32) && ccs[i] <= (-1))  || ccs[i]==(-72) || ccs[i] == '.' || ccs[i] == ' ') u++;
 				
 				else {
-					cout << "Используйте за ввода буквы славянского алфавита. Не используейте для ввода заглавные буквы. " << endl;
+					cout << "РСЃРїРѕР»СЊР·СѓР№С‚Рµ Р·Р° РІРІРѕРґР° Р±СѓРєРІС‹ СЃР»Р°РІСЏРЅСЃРєРѕРіРѕ Р°Р»С„Р°РІРёС‚Р°. РќРµ РёСЃРїРѕР»СЊР·СѓРµР№С‚Рµ РґР»СЏ РІРІРѕРґР° Р·Р°РіР»Р°РІРЅС‹Рµ Р±СѓРєРІС‹. " << endl;
 					u = 0;
 					break;
 				}
@@ -363,7 +363,7 @@ string hfst(string message,int mode) {
 			if (mode == 1) {
 				if (hfs.size() > 3) {
 					s++;
-					cout << "Максимум 3 символа." << endl;
+					cout << "РњР°РєСЃРёРјСѓРј 3 СЃРёРјРІРѕР»Р°." << endl;
 					break;
 				}
 			}
@@ -371,20 +371,20 @@ string hfst(string message,int mode) {
 			{
 				if (hfs.size() >= 9) {
 					s++;
-					cout << "Сумма слишком велика." << endl;
+					cout << "РЎСѓРјРјР° СЃР»РёС€РєРѕРј РІРµР»РёРєР°." << endl;
 					break;
 				}
 			}
 			if (mode == 3) {
 				if (hfs.size() != 9) {
 					s++;
-					cout << "Номер телефона должен содержать 9 символов." << endl;
+					cout << "РќРѕРјРµСЂ С‚РµР»РµС„РѕРЅР° РґРѕР»Р¶РµРЅ СЃРѕРґРµСЂР¶Р°С‚СЊ 9 СЃРёРјРІРѕР»РѕРІ." << endl;
 					break;
 				}
 			}
 			if (hfs[i] == ' ') {
 				s++;
-				cout << " Введите без пробелов" << endl;
+				cout << " Р’РІРµРґРёС‚Рµ Р±РµР· РїСЂРѕР±РµР»РѕРІ" << endl;
 				break;
 			}
 		}
@@ -393,7 +393,7 @@ string hfst(string message,int mode) {
 
 				if (hfs[i] >= '0' && hfs[i] <= '9') u++;
 				else {
-					cout << "Используйте только цифры для ввода" << endl;
+					cout << "РСЃРїРѕР»СЊР·СѓР№С‚Рµ С‚РѕР»СЊРєРѕ С†РёС„СЂС‹ РґР»СЏ РІРІРѕРґР°" << endl;
 					u = 0;
 					break;
 				}
@@ -406,15 +406,15 @@ string hfst(string message,int mode) {
 }
 string contract_name(string code) {
 	std::string name;
-	if (code == "1111") name = "Доверенность";
-	if (code == "2222") name = "Брачный договор";
-	if (code == "3333") name = "Завещание";
-	if (code == "4444") name = "Приватизация";
-	if (code == "5555") name = "Исполнительные надписи";
-	if (code == "6666") name = "Отчуждение недвижимости";
-	if (code == "7777") name = "Соглашение об уплате алиментов";
-	if (code == "8888") name = "Соглашение о выезде ребенка за границу";
-	if (code == "9999") name = "Соглашение";
+	if (code == "1111") name = "Р”РѕРІРµСЂРµРЅРЅРѕСЃС‚СЊ";
+	if (code == "2222") name = "Р‘СЂР°С‡РЅС‹Р№ РґРѕРіРѕРІРѕСЂ";
+	if (code == "3333") name = "Р—Р°РІРµС‰Р°РЅРёРµ";
+	if (code == "4444") name = "РџСЂРёРІР°С‚РёР·Р°С†РёСЏ";
+	if (code == "5555") name = "РСЃРїРѕР»РЅРёС‚РµР»СЊРЅС‹Рµ РЅР°РґРїРёСЃРё";
+	if (code == "6666") name = "РћС‚С‡СѓР¶РґРµРЅРёРµ РЅРµРґРІРёР¶РёРјРѕСЃС‚Рё";
+	if (code == "7777") name = "РЎРѕРіР»Р°С€РµРЅРёРµ РѕР± СѓРїР»Р°С‚Рµ Р°Р»РёРјРµРЅС‚РѕРІ";
+	if (code == "8888") name = "РЎРѕРіР»Р°С€РµРЅРёРµ Рѕ РІС‹РµР·РґРµ СЂРµР±РµРЅРєР° Р·Р° РіСЂР°РЅРёС†Сѓ";
+	if (code == "9999") name = "РЎРѕРіР»Р°С€РµРЅРёРµ";
 	return name;
 }
 string service_code(string message) {
@@ -456,7 +456,7 @@ void Contract::add_document_code() {
 	while (correct == false) {
 		system("cls");
 		correct = true;
-		years = year("Введите год:");
+		years = year("Р’РІРµРґРёС‚Рµ РіРѕРґ:");
 		if (years % 4 == 0) {
 			system("cls");
 			isLeap = true;
@@ -465,8 +465,8 @@ void Contract::add_document_code() {
 			if (years % 400 == 0) isLeap = true;
 			else isLeap = false;
 		}
-		months = month("Введиет месяц:");
-		days = day("Введите день:",isLeap,months);
+		months = month("Р’РІРµРґРёРµС‚ РјРµСЃСЏС†:");
+		days = day("Р’РІРµРґРёС‚Рµ РґРµРЅСЊ:",isLeap,months);
 		correct = current_time(days, months, years, correct);
 		if (!correct)system("pause");
 	}
@@ -479,7 +479,7 @@ void Contract::add_document_code() {
 	file2.close();
 	cout << date;
 	system("cls");
-	cout << "Вы добавили договор." << endl;
+	cout << "Р’С‹ РґРѕР±Р°РІРёР»Рё РґРѕРіРѕРІРѕСЂ." << endl;
 	return;
 }
 string BOO::contract_code(int type, bool& access) {
@@ -489,19 +489,19 @@ string BOO::contract_code(int type, bool& access) {
 	switch (type) {
 	case 1:
 		system("cls");
-		if (access) document_code = get_string("Введите номер договора.");
-		else document_code = get_string("Введите код документа еще раз.");
+		if (access) document_code = get_string("Р’РІРµРґРёС‚Рµ РЅРѕРјРµСЂ РґРѕРіРѕРІРѕСЂР°.");
+		else document_code = get_string("Р’РІРµРґРёС‚Рµ РєРѕРґ РґРѕРєСѓРјРµРЅС‚Р° РµС‰Рµ СЂР°Р·.");
 		break;
 	case 2:
 		system("cls");
-		document_code = get_string("Такой номер договора уже существует в базе. Введите номер документа еще раз.");
+		document_code = get_string("РўР°РєРѕР№ РЅРѕРјРµСЂ РґРѕРіРѕРІРѕСЂР° СѓР¶Рµ СЃСѓС‰РµСЃС‚РІСѓРµС‚ РІ Р±Р°Р·Рµ. Р’РІРµРґРёС‚Рµ РЅРѕРјРµСЂ РґРѕРєСѓРјРµРЅС‚Р° РµС‰Рµ СЂР°Р·.");
 		break;
 	};
 	do {
 		u = 0;
 		if (document_code.size() != 10)
 		{
-			document_code = get_string("Код договора должен содержать 10 символов.");
+			document_code = get_string("РљРѕРґ РґРѕРіРѕРІРѕСЂР° РґРѕР»Р¶РµРЅ СЃРѕРґРµСЂР¶Р°С‚СЊ 10 СЃРёРјРІРѕР»РѕРІ.");
 			continue;
 		}
 
@@ -510,7 +510,7 @@ string BOO::contract_code(int type, bool& access) {
 				|| (document_code[i] >= 'A' && document_code[i] <= 'Z')
 				|| (document_code[i] >= '0' && document_code[i] <= '9')))
 			{
-				document_code = get_string("Код договора содержит недопустимые символы.");
+				document_code = get_string("РљРѕРґ РґРѕРіРѕРІРѕСЂР° СЃРѕРґРµСЂР¶РёС‚ РЅРµРґРѕРїСѓСЃС‚РёРјС‹Рµ СЃРёРјРІРѕР»С‹.");
 				break;
 			}
 			else u++;
@@ -521,10 +521,10 @@ string BOO::contract_code(int type, bool& access) {
 int year(string message) {
 	int years;
 	while (true) {
-		years = get_int("Введите год");
+		years = get_int("Р’РІРµРґРёС‚Рµ РіРѕРґ");
 		if (years < 2020 || years > 2030) {
 			system("cls");
-			cout << "Только для 2020-2030" << endl;
+			cout << "РўРѕР»СЊРєРѕ РґР»СЏ 2020-2030" << endl;
 			continue;
 		}
 		break;
@@ -534,10 +534,10 @@ int year(string message) {
 int month(string message) {
 	int month;
 	while (true) {
-		month = get_int("Введите месяц");
+		month = get_int("Р’РІРµРґРёС‚Рµ РјРµСЃСЏС†");
 		if (month < 1 || month > 12) {
 			system("cls");
-			cout << "Есть только 12 месяцев в году" << endl;
+			cout << "Р•СЃС‚СЊ С‚РѕР»СЊРєРѕ 12 РјРµСЃСЏС†РµРІ РІ РіРѕРґСѓ" << endl;
 			continue;
 		}
 		break;
@@ -547,30 +547,30 @@ int month(string message) {
 int day(string message, bool isLeap, int& month) {
 	int day;
 	while (true) {
-		day = get_int("Введите день");
+		day = get_int("Р’РІРµРґРёС‚Рµ РґРµРЅСЊ");
 		if (day < 1 || day >31) {
 			system("cls");
-			cout << "Максимум 31 день" << endl;
+			cout << "РњР°РєСЃРёРјСѓРј 31 РґРµРЅСЊ" << endl;
 			continue;
 		}
 		if (month == 4 || month == 6 || month == 9 || month == 11) {
 			system("cls");
 			if (day > 30) {
-				cout << "В апреле, июне, сентябре и ноябре 30 дней" << endl;
+				cout << "Р’ Р°РїСЂРµР»Рµ, РёСЋРЅРµ, СЃРµРЅС‚СЏР±СЂРµ Рё РЅРѕСЏР±СЂРµ 30 РґРЅРµР№" << endl;
 				continue;
 			}
 		}
 		if (month == 2 && isLeap == true) {
 			system("cls");
 			if (day > 29) {
-				cout << "В високосном году в феврале 29 дней" << endl;
+				cout << "Р’ РІРёСЃРѕРєРѕСЃРЅРѕРј РіРѕРґСѓ РІ С„РµРІСЂР°Р»Рµ 29 РґРЅРµР№" << endl;
 				continue;
 			}
 		}
 		if (month == 2 && isLeap == false) {
 			system("cls");
 			if (day > 28) {
-				cout << "В феврале 28 дней" << endl;
+				cout << "Р’ С„РµРІСЂР°Р»Рµ 28 РґРЅРµР№" << endl;
 				continue;
 			}
 		}
@@ -588,11 +588,11 @@ int get_int(string message) {
 			cin.clear();
 			cin.ignore(32767, '\n');
 			system("cls");
-			cout << "Вводите целое число" << endl;
+			cout << "Р’РІРѕРґРёС‚Рµ С†РµР»РѕРµ С‡РёСЃР»Рѕ" << endl;
 			cout << message << endl;
 			continue;
 		}
-		if (c < 0) { cout << "Введите положительное число" << endl; continue; }
+		if (c < 0) { cout << "Р’РІРµРґРёС‚Рµ РїРѕР»РѕР¶РёС‚РµР»СЊРЅРѕРµ С‡РёСЃР»Рѕ" << endl; continue; }
 		break;
 	};
 	return c;
@@ -600,10 +600,10 @@ int get_int(string message) {
 bool current_time(int &day, int &month, int &year,bool correct) {
 	time_t t = time(nullptr); 
 	tm* now = localtime(&t); 
-    if (day != now->tm_mday) { correct = false; cout << "День не совпадает с нынешним" << endl; }
-	if (month != now->tm_mon + 1) { correct = false; cout << "Месяц не совпадает с нынешним" << endl; }
-    if (year != now->tm_year + 1900) { correct = false; cout << "Год не совпадает с нынешним" << endl; }
-	cout << " Введите дату еще раз" << endl;
+    if (day != now->tm_mday) { correct = false; cout << "Р”РµРЅСЊ РЅРµ СЃРѕРІРїР°РґР°РµС‚ СЃ РЅС‹РЅРµС€РЅРёРј" << endl; }
+	if (month != now->tm_mon + 1) { correct = false; cout << "РњРµСЃСЏС† РЅРµ СЃРѕРІРїР°РґР°РµС‚ СЃ РЅС‹РЅРµС€РЅРёРј" << endl; }
+    if (year != now->tm_year + 1900) { correct = false; cout << "Р“РѕРґ РЅРµ СЃРѕРІРїР°РґР°РµС‚ СЃ РЅС‹РЅРµС€РЅРёРј" << endl; }
+	cout << " Р’РІРµРґРёС‚Рµ РґР°С‚Сѓ РµС‰Рµ СЂР°Р·" << endl;
 	return correct;
 };
 string to_string_date(int& day, int& month, int& year) {
@@ -622,13 +622,13 @@ void BOO::choice(int type) {
 	string choice;
 	switch (type) {
       case 1:
-		choice = yes_no("Как вы хотите продолжить? Введите 'да' , если хотите вернуться в меню администратора и 'нет', если в начальное меню.");
-		if (choice == "да") BOO::menu(1);
+		choice = yes_no("РљР°Рє РІС‹ С…РѕС‚РёС‚Рµ РїСЂРѕРґРѕР»Р¶РёС‚СЊ? Р’РІРµРґРёС‚Рµ 'РґР°' , РµСЃР»Рё С…РѕС‚РёС‚Рµ РІРµСЂРЅСѓС‚СЊСЃСЏ РІ РјРµРЅСЋ Р°РґРјРёРЅРёСЃС‚СЂР°С‚РѕСЂР° Рё 'РЅРµС‚', РµСЃР»Рё РІ РЅР°С‡Р°Р»СЊРЅРѕРµ РјРµРЅСЋ.");
+		if (choice == "РґР°") BOO::menu(1);
 		break;
 	  case 2:
-	    choice = yes_no("Как вы хотите продолжить? Введите 'да' , если хотите вернуться в меню пользователя и 'нет', если в начальное меню.");
-		if (choice == "да") BOO::menu(2);
+	    choice = yes_no("РљР°Рє РІС‹ С…РѕС‚РёС‚Рµ РїСЂРѕРґРѕР»Р¶РёС‚СЊ? Р’РІРµРґРёС‚Рµ 'РґР°' , РµСЃР»Рё С…РѕС‚РёС‚Рµ РІРµСЂРЅСѓС‚СЊСЃСЏ РІ РјРµРЅСЋ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ Рё 'РЅРµС‚', РµСЃР»Рё РІ РЅР°С‡Р°Р»СЊРЅРѕРµ РјРµРЅСЋ.");
+		if (choice == "РґР°") BOO::menu(2);
 		break;
 	 }
-	if (choice == "нет") BOO::menu(0);
+	if (choice == "РЅРµС‚") BOO::menu(0);
  }
