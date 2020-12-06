@@ -22,7 +22,7 @@ bool Human::check_login_once() {
 			if (i.login == client.login)
 			{
 				system("cls");
-				cout << "Ïîëüçîâàòåëü ñ òàêèì ëîãèíîì äåéñòâèòåëüíî åñòü." << endl;
+				cout << "ÐŸÐ¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»ÑŒ Ñ Ñ‚Ð°ÐºÐ¸Ð¼ Ð»Ð¾Ð³Ð¸Ð½Ð¾Ð¼ Ð´ÐµÐ¹ÑÑ‚Ð²Ð¸Ñ‚ÐµÐ»ÑŒÐ½Ð¾ ÐµÑÑ‚ÑŒ." << endl;
 				check = true;
 				access = true;
 				break;
