@@ -1,6 +1,6 @@
 #include "Header.h"
 
-void data_user_file(vector<Human>& users) {   // чтение логинов и паролей пользователей
+void data_user_file(vector<Human>& users) {   
 	ifstream file("users.txt");
 	while (file)
 	{
