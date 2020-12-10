@@ -1,6 +1,6 @@
 #include "Header.h"
 
-void data_user_file(vector<Human>& users) {   
+void data_user_file(vector<Human> & users) {
 	ifstream file("users.txt");
 	while (file)
 	{
@@ -48,7 +48,7 @@ void contract_code(vector<Contract>& documentCode) {
 	file.close();
 	return;
 }
-void Human::rewrite_user_file(vector<Human>& users){
+void Human::rewrite_user_file(vector<Human>& users) {
 	ofstream file("users.txt", ios::trunc);
 	for (auto i : users)
 		file << i.login << endl << i.password << endl;
@@ -57,27 +57,31 @@ void Human::rewrite_user_file(vector<Human>& users){
 }
 void data_client_file(vector<Client>& userss) {
 	ifstream file("info.txt");
+	string str;
 	while (file) {
 		Client temp;
 		getline(file, temp.client_code);
 		getline(file, temp.name);
 		getline(file, temp.surname);
-		getline(file, temp.telephone_number);
+		getline(file, str);
+		temp.telephone_number = stoi(str);
 		getline(file, temp.country);
 		getline(file, temp.city);
 		getline(file, temp.street);
-		getline(file, temp.housenumber);
-		getline(file, temp.flatnumber);
+		getline(file, str);
+		temp.housenumber = stoi(str);
+		getline(file, str);
+		temp.flatnumber = stoi(str);
 		userss.push_back(temp);
 	}
 	if (!userss.empty()) userss.erase(userss.end() - 1);
 	file.close();
 }
-void rewrite_information_file( vector <Client>& userss) {
+void rewrite_information_file(vector <Client>& userss) {
 	ofstream file("info.txt", ios::trunc);
 	for (auto i : userss)
 		file << i.client_code << endl << i.name << endl << i.surname << endl
-		<< i.telephone_number << endl << i.country << endl << i.city << endl << i.street << endl << i.housenumber 
+		<< i.telephone_number << endl << i.country << endl << i.city << endl << i.street << endl << i.housenumber
 		<< endl << i.flatnumber << endl;
 	file.close();
 	return;
@@ -98,7 +102,7 @@ void rewrite_contract_file(vector <Client>& magic) {
 }
 void data_contract_file(vector<Client>& magic) {
 	ifstream file("magic.txt");
-	while (file){
+	while (file) {
 		Client temp;
 		getline(file, temp.client_code);
 		getline(file, temp.name);
@@ -108,15 +112,18 @@ void data_contract_file(vector<Client>& magic) {
 	if (!magic.empty()) magic.erase(magic.end() - 1);
 	file.close();
 }
-void data_dogovor_file(vector<Outputs<string>>& dogovors) {
+void data_dogovor_file(vector<Outputs>& dogovors) {
 	ifstream file("dogovor.txt");
+	string str;
 	while (file) {
-		Outputs<string> temp;
+		Outputs temp;
 		getline(file, temp.client_code);
 		getline(file, temp.service_code);
 		getline(file, temp.name);
-		getline(file, temp.summ);
-		getline(file, temp.comission);
+		getline(file, str);
+		temp.summ = stoi(str);
+		getline(file,str);
+		temp.comission = stoi(str);
 		getline(file, temp.document_code);
 		getline(file, temp.date);
 		dogovors.push_back(temp);
