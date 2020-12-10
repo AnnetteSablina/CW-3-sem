@@ -1,5 +1,4 @@
 #include "Header.h"
-
 int Client::menu() {
 	int key = 0;
 	int code;
@@ -114,12 +113,12 @@ void Client::changeinfo(int type) {
 		temp.client_code = passport_code;
 		temp.name = ccsns("Введите имя.");
 		temp.surname = ccsns("Введите фамилию.");
-		temp.telephone_number = hfst("Введите номер телефона.",3);
+		temp.telephone_number = stoi(hfst("Введите номер телефона.",3));
 		temp.country = ccsns("Введите страну проживания.");
 		temp.city = ccsns("Введите город проживания.");
 		temp.street = ccsns("Введите улицу проживания.");
-		temp.housenumber = hfst("Введите номер дома.",1);
-		temp.flatnumber = hfst("Введите номер квартиры, введите 0 ,если клиент проживает в частном доме.",1);
+		temp.housenumber = stoi(hfst("Введите номер дома.",1));
+		temp.flatnumber = stoi(hfst("Введите номер квартиры, введите 0 ,если клиент проживает в частном доме.",1));
 		userss.push_back(temp);
 		rewrite_information_file(userss);
 		vector <Client> passport;
@@ -155,7 +154,7 @@ void Client::find_contract_number(int type) {
 	bool access = true;
 	string dogovor_number;
 	dogovor_number = BOO::contract_code(1, access);
-	vector<Outputs<string>> dogovors;
+	vector<Outputs> dogovors;
 	data_dogovor_file(dogovors);
 	TablePrinter tp(&cout);
 	tp.AddColumn("Номер договора", 14);
@@ -187,7 +186,7 @@ void Client::find_passport(int type) {
 	int u = 0;
 	string passport_code;
 	passport_code = BOO::client_code("Введите номер паспорта.");
-	std::vector<Outputs<string>> dogovors;
+	std::vector<Outputs> dogovors;
 	data_dogovor_file(dogovors);
 	TablePrinter tp(&cout);
 	tp.AddColumn("Номер паспорта", 14);
@@ -232,7 +231,7 @@ void Client::find_date(int type) {
 	months = month("Введиет месяц:");
 	days = day("Введите день:", isLeap, months);
 	string date = to_string_date(days, months, years);
-	vector<Outputs<string>> dogovors;
+	vector<Outputs> dogovors;
 	data_dogovor_file(dogovors);
 	TablePrinter tp(&cout);
 	tp.AddColumn("Дата подписания", 15);
